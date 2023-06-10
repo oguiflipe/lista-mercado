@@ -1,87 +1,7 @@
 <html>
 
     <head>
-        <style>
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            header{
-                background-color: teal;
-                text-align: center;
-                color: whitesmoke;
-                padding: 20px 0;
-            }
-
-            .lista{
-                display: flex;
-                justify-content: center;
-                margin: 20px 0px;
-            }
-
-            .lista input[type=text]{
-                height: 40px;
-                padding: 10px 20px;
-                margin: 0px 5px;
-                border-radius: 10px;
-            }
-            .lista input[type=number]{
-                height: 40px;
-                padding: 10px 20px;
-                margin: 0px 5px;
-                border-radius: 10px;
-            }
-            .lista input[type=submit]{
-                height: 40px;
-                padding: 10px 20px;
-                margin: 0px 5px;
-                background-color: teal;
-                text-align: center;
-                color: whitesmoke;
-                border-radius: 50px;
-            }
-            .lista-produtos-single{
-                padding: 10px 0;
-                border-bottom: 1px solid #ccc;
-                display: flex;
-            }
-            .lista-produtos-single h3{
-                flex: 1;
-                padding: 0 20px;
-            }
-            h3.price-produto{
-                text-align: right;
-                font-size: 17px;
-            }
-            
-            h3.price-produto > span{
-                padding: 0 20px;
-                color: whitesmoke;
-                background-color: teal;
-                border-radius: 20px;
-            }
-            .soma-produtos{
-                margin: 20px 0;
-                color:rgb(41, 41, 41);
-                margin: 20px 5px;
-                padding: 0 20px;
-            }
-            .botao{
-                display: flex;
-                justify-content: center;
-            }
-            .limpar{
-                padding: 5px 30px;
-                color: whitesmoke;
-                font-size: 15px;
-                font-weight: bold;
-                background-color: red;
-                border-radius: 20px;
-                text-decoration: none;
-                margin: 0px 20px;
-            }
-        </style>
+        <link href="./src/css/style.css" rel="stylesheet">
     </head>
 
     <body>
@@ -116,6 +36,6 @@
             <button class="limpar">Limpar Lista</button>
         </div>
 
-        <script src="supermercado.js"></script>
+        <script src="./src/js/supermercado.js"></script>
     </body>
 </html>
