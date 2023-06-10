@@ -67,7 +67,20 @@
                 margin: 20px 5px;
                 padding: 0 20px;
             }
-
+            .botao{
+                display: flex;
+                justify-content: center;
+            }
+            .limpar{
+                padding: 5px 30px;
+                color: whitesmoke;
+                font-size: 15px;
+                font-weight: bold;
+                background-color: red;
+                border-radius: 20px;
+                text-decoration: none;
+                margin: 0px 20px;
+            }
         </style>
     </head>
 
@@ -84,7 +97,6 @@
             <input 
                 type="number"
                 name="price"
-                step="0.01"
                 placeholder="Valor do produto:"
             />
             <input 
@@ -98,6 +110,10 @@
 
         <div class="soma-produtos">
             <h1>Total: R$0</h1>
+        </div>
+
+        <div class="botao">
+            <button class="limpar">Limpar Lista</button>
         </div>
 
         <script src="supermercado.js"></script>

@@ -35,7 +35,6 @@ document.querySelector('input[type=submit]')
     })
     //setando o numero de casas decimais no total
     soma = soma.toFixed(2);
-    alert(soma);
     //resetando os inputs para o usuário adicionar novos produtos.
     nameProduto.value = "";
     precoProduto.value = "";
@@ -46,3 +45,11 @@ document.querySelector('input[type=submit]')
     elementoSoma.innerHTML = 'R$'+soma;
 });
 
+//criando a função de limpeza do carrinho.
+document.querySelector('.limpar')
+.addEventListener('click', () => {
+    items = [];
+    document.querySelector('.lista-produtos').innerHTML= "";
+    document.querySelector('.soma-produtos h1').innerHTML= "Total: R$0";
+    
+});
