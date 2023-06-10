@@ -16,14 +16,30 @@
 
             .lista{
                 display: flex;
-                margin: 20px 0;
-                padding: 0 20px;
+                justify-content: center;
+                margin: 20px 0px;
             }
 
             .lista input[type=text]{
-                flex: 1;
                 height: 40px;
-                padding-left: 20px;
+                padding: 10px 20px;
+                margin: 0px 5px;
+                border-radius: 10px;
+            }
+            .lista input[type=number]{
+                height: 40px;
+                padding: 10px 20px;
+                margin: 0px 5px;
+                border-radius: 10px;
+            }
+            .lista input[type=submit]{
+                height: 40px;
+                padding: 10px 20px;
+                margin: 0px 5px;
+                background-color: teal;
+                text-align: center;
+                color: whitesmoke;
+                border-radius: 50px;
             }
             .lista-produtos-single{
                 padding: 10px 0;
@@ -48,6 +64,8 @@
             .soma-produtos{
                 margin: 20px 0;
                 color:rgb(41, 41, 41);
+                margin: 20px 5px;
+                padding: 0 20px;
             }
 
         </style>
@@ -64,9 +82,10 @@
                 name="nome_produto"
             />
             <input 
-                type="text"
+                type="number"
+                name="price"
+                step="0.01"
                 placeholder="Valor do produto:"
-                name="valor_produto"
             />
             <input 
                 type="submit"
@@ -75,15 +94,10 @@
             />
         </div>
 
-        <div class="lista-produtos">
-            <div class="lista-produtos-single">
-                <h3>RedBull</h3>
-                <h3 class="price-produto"><span>R$20,00</span></h3>
-            </div>
-        </div>
+        <div class="lista-produtos"></div>
 
         <div class="soma-produtos">
-            <h1>Total: R$100,00</h1>
+            <h1>Total: R$0</h1>
         </div>
 
         <script src="supermercado.js"></script>
